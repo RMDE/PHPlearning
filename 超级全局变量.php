@@ -53,7 +53,7 @@ echo $_SERVER['SCRIPT_NAME'];
 ?>
 
 <?php
-// $_REQUEST
+// $_REQUEST $_POST
 // 用于收集HTML表单提交
 
 /*以下实例显示了一个输入字段（input）及提交按钮(submit)的表单(form)。 
@@ -69,14 +69,16 @@ Name: <input type="text" name="fname">
 <input type="submit">
 </form>
 <?php
-$name = $_REQUEST['fname']; 
-echo $name; 
+$name1 = $_REQUEST['fname']; 
+echo "<br>\$_REQUEST=".$name1; 
+$name2 = $_POST['fname'];
+echo "<br>\$_POST=".$name2
 ?>
 </body>
 </html>
 
 
-// $_POST
+
 // $_GET
 // $_FILES
 // $_ENV
